@@ -39,7 +39,7 @@ class Item extends React.Component {
       return null;
     }
 
-    const src_img = (this.props.item.image == "" ? placeholder : this.props.item.image);
+    const src_img = (this.props.item.image === "" ? placeholder : this.props.item.image);
 
     const markup = {
       __html: marked(this.props.item.description, { sanitize: true }),
